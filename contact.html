@@ -12,41 +12,51 @@
 
 <body>
 
-    <div>
-        <a class="homeButton" href="/">
+    <div class="homeButton">
+        <a href="/">
             borrega.io
         </a>
     </div>
 
-    <div class="contact-title">
-        <h1>Send me <br> a message.</h1>
-    </div>
+    <div id="section">
+        <div class="title">
+            <h1 class="lineUp1">Send me</h1>
+            <h1 class="lineUp2">a <span>message.</span></h1>
+        </div>
 
-    <div class="contact-p">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et dui turpis. Sed convallis at dui nec
-            commodo.
-            Praesent tincidunt odio placerat ante faucibus varius. Aliquam sodales in magna pulvinar semper. Suspendisse
-            potenti. Morbi id tellus a purus euismod placerat quis non augue. Praesent vitae porta felis, sed tincidunt
-            nulla.
+        <div class="description">
+            <h3>
+                Contact me.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et dui turpis. Sed convallis at dui nec
+                commodo.
+                Praesent tincidunt odio placerat ante faucibus varius. Aliquam sodales in magna pulvinar semper.
+                Suspendisse
+                potenti. Morbi id tellus a purus euismod placerat quis non augue. Praesent vitae porta felis, sed
+                tincidunt
+                nulla.
 
-            Proin rhoncus lobortis lectus, ut ultrices augue aliquam ut. Nullam interdum varius dictum. Aliquam libero
-            mi,
-            convallis id quam ac, suscipit volutpat lectus. Duis accumsan gravida ultricies. Sed ut diam bibendum,
-            malesuada
-            nisl a, pharetra massa. Praesent ultrices euismod enim non molestie. Sed ullamcorper tempus odio pharetra
-            consequat. Pellentesque semper ut arcu sit amet vulputate. Maecenas posuere euismod nisi ac posuere.
-            Praesent
-            augue quam, tempor nec velit sed, tempor tempor nunc. Vivamus a ipsum tortor.
-        </p>
-    </div>
+                Proin rhoncus lobortis lectus, ut ultrices augue aliquam ut. Nullam interdum varius dictum. Aliquam
+                libero
+                mi,
+                convallis id quam ac, suscipit volutpat lectus. Duis accumsan gravida ultricies. Sed ut diam bibendum,
+                malesuada
+                nisl a, pharetra massa. Praesent ultrices euismod enim non molestie. Sed ullamcorper tempus odio
+                pharetra
+                consequat. Pellentesque semper ut arcu sit amet vulputate. Maecenas posuere euismod nisi ac posuere.
+                Praesent
+                augue quam, tempor nec velit sed, tempor tempor nunc. Vivamus a ipsum tortor.
+            </p>
+        </div>
 
-    <input style="display: none" type="text" value="c.borrega@pm.me" id="email">
+        <input style="display: none" type="text" value="c.borrega@pm.me" id="email">
 
-    <div class="contact-list">
-            <button onclick="copyToClipboard()"><span>c.borrega@pm.me</span></button>
+        <div class="links">
+            <button class="email" onclick="copyToClipboard()"><span>c.borrega@pm.me</span></button>
             <a href="https://www.linkedin.com/in/carlosborrega/" target="_blank">LinkedIn</a>
             <a href="https://github.com/borregaio" target="_blank">Github</a>
+        </div>
     </div>
 
     <script src="index.js"></script>

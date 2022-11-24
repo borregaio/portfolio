@@ -1,16 +1,84 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 body {
     background-color: #000;
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 }
+
+
+/* Animation */
+
+.lineUp1 {
+    animation: 2s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .lineUp2 {
+    animation: 4s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .lineUp3 {
+    animation: 6s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
 
 a {
     color: #fff;
-    font-size: 130px;
+    font-size: 150px;
     font-weight: 700;
     margin: 0;
     display: block;
@@ -20,6 +88,14 @@ a {
 
 h1 {
     color: #fff;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 p {
@@ -71,59 +147,91 @@ p {
     content: "Contact"
 }
 
+
+/* About */
+
+.profile {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: right;
+
+}
+
+
 /* Contact */
 
 .homeButton {
+    position: fixed;
+    left: 85%;
+    bottom: 85%;
+
+}
+
+.homeButton a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
     text-align: right;
-    margin: 100px 200px 100px 0;
     transition: transform 500ms;
 }
 
-.homeButton:hover {
+.homeButton a:hover {
     transform: translateX(-40px);
 }
 
-.contact-title {
-    font-size: 50px;
-    margin: 150px 300px 100px 300px;
+#section {
+    margin-top: 150px;
+    margin-bottom: 200px;
 }
 
-.contact-p {
-    margin: 0 300px 100px 400px;
+.title {
+    font-size: 60px;
+    margin: 250px 300px 200px 250px;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.title span {
+    color: palevioletred;
+}
+
+.description {
+    margin: 0 300px 50px 400px;
     line-height: 2rem;
     font-size: 20px;
 }
 
-.contact-list {
+.links {
     margin: 0 300px 100px 400px;
 }
 
-.contact-list a, button {
+.links a, button {
     font-size: 20px;
     color: palevioletred;
     text-decoration: none;
-    line-height: 4rem;
+    margin-bottom: 30px;
     font-weight: 700;
     transition: transform 500ms;
 }
 
-.contact-list button {
-    background-color: transparent;
+.links button {
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    border: none;
     padding: 0;
     cursor: pointer;
 }
 
-.contact-list a:hover, button:hover {
+.links a:hover, button:hover {
     transform: translateX(40px);
 }
 
-button:hover span {
+.email:hover span {
     display: none;
 }
 
-button:hover:before {
+.email:hover:before {
     content: "Copy to clipboard";
 }
