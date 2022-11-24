@@ -15,6 +15,15 @@ a {
     margin: 0;
     display: block;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
 }
 
 .main {
@@ -30,12 +39,12 @@ a {
 .iam,
 .name {
     text-decoration: none;
-    transition: transform 700ms;
+    transition: transform 500ms;
 }
 
 .iam,
 .name {
-    color: red;
+    color: palevioletred;
 }
 
 .hello:hover span,
@@ -47,7 +56,7 @@ a {
 .hello:hover,
 .iam:hover,
 .name:hover {
-    transform: translateX(50px);
+    transform: translateX(70px);
 }
 
 .hello:hover:before {
@@ -60,4 +69,61 @@ a {
 
 .name:hover:before {
     content: "Contact"
+}
+
+/* Contact */
+
+.homeButton {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;
+    margin: 100px 200px 100px 0;
+    transition: transform 500ms;
+}
+
+.homeButton:hover {
+    transform: translateX(-40px);
+}
+
+.contact-title {
+    font-size: 50px;
+    margin: 150px 300px 100px 300px;
+}
+
+.contact-p {
+    margin: 0 300px 100px 400px;
+    line-height: 2rem;
+    font-size: 20px;
+}
+
+.contact-list {
+    margin: 0 300px 100px 400px;
+}
+
+.contact-list a, button {
+    font-size: 20px;
+    color: palevioletred;
+    text-decoration: none;
+    line-height: 4rem;
+    font-weight: 700;
+    transition: transform 500ms;
+}
+
+.contact-list button {
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.contact-list a:hover, button:hover {
+    transform: translateX(40px);
+}
+
+button:hover span {
+    display: none;
+}
+
+button:hover:before {
+    content: "Copy to clipboard";
 }
