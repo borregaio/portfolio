@@ -1,3 +1,5 @@
+// "Copy to clipboard" text
+
 function copyToClipboard() {
 
     var copyText = document.getElementById("email");
@@ -6,5 +8,5 @@ function copyToClipboard() {
     copyText.setSelectionRange(0, 99999);
   
     navigator.clipboard.writeText(copyText.value);
-  
+    
   }

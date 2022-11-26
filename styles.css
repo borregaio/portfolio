@@ -1,237 +1,271 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #000;
-    font-family: 'Roboto', sans-serif;
-
+  background-color: #7C78E7ff;
+  font-family: "Roboto Mono", monospace;
 }
 
 
 /* Animation */
 
 .lineUp1 {
-    animation: 2s anim-lineUp ease-out;
-  }
-  @keyframes anim-lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+  animation: 2s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
   }
 
-  .lineUp2 {
-    animation: 4s anim-lineUp ease-out;
-  }
-  @keyframes anim-lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+  20% {
+    opacity: 0;
   }
 
-  .lineUp3 {
-    animation: 6s anim-lineUp ease-out;
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
   }
-  @keyframes anim-lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
-  
+}
+
+.lineUp2 {
+  animation: 4s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.lineUp3 {
+  animation: 6s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 
 a {
-    color: #fff;
-    font-size: 150px;
-    font-weight: 700;
-    margin: 0;
-    display: block;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+  color: #F7F9F6ff;
+  font-size: 130px;
+  font-weight: 700;
+  margin: 0;
+  display: block;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 {
-    color: #fff;
-}
-
-h3 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  font-family: 'Rubik', sans-serif;
+  color: #F7F9F6ff;
 }
 
 p {
-    color: #fff;
+  color: #F7F9F6ff;
 }
 
 .main {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .hello,
 .iam,
 .name {
-    text-decoration: none;
-    transition: transform 500ms;
+  text-decoration: none;
+  transition: transform 500ms;
 }
 
 .iam,
 .name {
-    color: palevioletred;
+  color: #8AE293ff;
 }
 
 .hello:hover span,
 .iam:hover span,
 .name:hover span {
-    display: none;
+  display: none;
 }
 
 .hello:hover,
 .iam:hover,
 .name:hover {
-    transform: translateX(70px);
+  transform: translateX(70px);
 }
 
 .hello:hover:before {
-    content: "About"
+  content: "About"
 }
 
 .iam:hover:before {
-    content: "Projects"
+  content: "Projects"
 }
 
 .name:hover:before {
-    content: "Contact"
+  content: "Contact"
 }
 
 
 /* About */
 
 .profile {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: right;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: right;
 
 }
 
+
+/* Projects */
+
+ul {
+  margin: 200px 200px;
+}
+
+ul a {
+  text-decoration: none;
+  font-size: 70px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  transition: transform 500ms;
+}
+
+ul a:hover {
+  transform: translateX(25px);
+  color: #8AE293ff;
+}
+
+h4 {
+  font-family: 'Roboto Mono', monospace;
+  color: #F7F9F6ff;
+}
 
 /* Contact */
 
 .homeButton {
-    position: fixed;
-    left: 85%;
-    bottom: 85%;
+  position: fixed;
+  left: 85%;
+  bottom: 85%;
 
 }
 
 .homeButton a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: right;
-    transition: transform 500ms;
+  font-family: 'Roboto Mono', monospace;
+  color: #F7F9F6ff;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: right;
+  transition: transform 500ms;
 }
 
 .homeButton a:hover {
-    transform: translateX(-40px);
+  transform: translateX(-25px);
 }
 
 #section {
-    margin-top: 150px;
-    margin-bottom: 200px;
+  margin-top: 150px;
+  margin-bottom: 200px;
 }
 
 .title {
-    font-size: 60px;
-    margin: 250px 300px 200px 250px;
+  font-size: 50px;
+  margin: 250px 300px 200px 250px;
 }
 
 .title h1 {
-    margin: 0;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
 }
 
 .title span {
-    color: palevioletred;
+  color: #8AE293ff;
 }
 
 .description {
-    margin: 0 300px 50px 400px;
-    line-height: 2rem;
-    font-size: 20px;
+  margin: 0 400px 50px 400px;
+  line-height: 2rem;
+  font-size: 20px;
 }
 
 .links {
-    margin: 0 300px 100px 400px;
+  margin: 0 400px 100px 400px;
 }
 
-.links a, button {
-    font-size: 20px;
-    color: palevioletred;
-    text-decoration: none;
-    margin-bottom: 30px;
-    font-weight: 700;
-    transition: transform 500ms;
+.links a,
+button {
+  font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+  font-size: 20px;
+  color: #8AE293ff;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-weight: 700;
+  transition: transform 500ms;
 }
 
 .links button {
-    font-family: 'Roboto', sans-serif;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-.links a:hover, button:hover {
-    transform: translateX(40px);
+.links a:hover,
+button:hover {
+  transform: translateX(25px);
 }
 
 .email:hover span {
-    display: none;
+  display: none;
 }
 
 .email:hover:before {
-    content: "Copy to clipboard";
+  content: "Copy to clipboard";
 }
