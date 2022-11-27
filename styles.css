@@ -12,7 +12,7 @@ body {
 /* Animation */
 
 .lineUp1 {
-  animation: 2s anim-lineUp ease-out;
+  animation: 1000ms anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -37,7 +37,7 @@ body {
 }
 
 .lineUp2 {
-  animation: 4s anim-lineUp ease-out;
+  animation: 1200ms anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -62,7 +62,7 @@ body {
 }
 
 .lineUp3 {
-  animation: 6s anim-lineUp ease-out;
+  animation: 1400ms anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -84,6 +84,15 @@ body {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+.fadeIn {
+  animation: 2s fadeIn ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 
@@ -151,6 +160,10 @@ p {
   content: "Contact"
 }
 
+.firstImage {
+  max-width: 100%;
+}
+
 
 /* About */
 
@@ -186,6 +199,7 @@ h4 {
   color: #F7F9F6ff;
 }
 
+
 /* Contact */
 
 .homeButton {
@@ -206,6 +220,7 @@ h4 {
 
 .homeButton a:hover {
   transform: translateX(-25px);
+  color: #8AE293ff;
 }
 
 #section {
@@ -267,5 +282,5 @@ button:hover {
 }
 
 .email:hover:before {
-  content: "Copy to clipboard";
+  content: "Click to copy";
 }
