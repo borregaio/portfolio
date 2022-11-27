@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #7C78E7ff;
+  background-color: #7C78E7;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -12,7 +12,7 @@ body {
 /* Animation */
 
 .lineUp1 {
-  animation: 1000ms anim-lineUp ease-out;
+  animation: 1s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -37,7 +37,7 @@ body {
 }
 
 .lineUp2 {
-  animation: 1200ms anim-lineUp ease-out;
+  animation: 2s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -62,7 +62,7 @@ body {
 }
 
 .lineUp3 {
-  animation: 1400ms anim-lineUp ease-out;
+  animation: 3s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -87,7 +87,7 @@ body {
 }
 
 .fadeIn {
-  animation: 2s fadeIn ease-out;
+  animation: 3s fadeIn;
 }
 
 @keyframes fadeIn {
@@ -97,10 +97,10 @@ body {
 
 
 a {
-  color: #F7F9F6ff;
-  font-size: 130px;
+  color: #F7F9F6;
+  font-size: 120px;
   font-weight: 700;
-  margin: 0;
+  margin: 20px 0;
   display: block;
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
@@ -108,20 +108,28 @@ a {
 
 h1 {
   font-family: 'Rubik', sans-serif;
-  color: #F7F9F6ff;
+  color: #F7F9F6;
 }
 
 p {
-  color: #F7F9F6ff;
+  color: #F7F9F6;
 }
 
 .main {
   margin: 0;
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 10%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.coverImage {
+  text-align: right;
+}
+
+.coverImage img {
+  width: 50%;
 }
 
 .hello,
@@ -133,7 +141,7 @@ p {
 
 .iam,
 .name {
-  color: #8AE293ff;
+  color: #8AE293;
 }
 
 .hello:hover span,
@@ -158,10 +166,6 @@ p {
 
 .name:hover:before {
   content: "Contact"
-}
-
-.firstImage {
-  max-width: 100%;
 }
 
 
@@ -191,12 +195,24 @@ ul a {
 
 ul a:hover {
   transform: translateX(25px);
-  color: #8AE293ff;
+  color: #8AE293;
 }
 
 h4 {
   font-family: 'Roboto Mono', monospace;
-  color: #F7F9F6ff;
+  color: #F7F9F6;
+}
+
+
+/* Projects indivisual page */
+
+.projectDescription {
+  font-size: 28px;
+}
+
+.projectImage {
+  width: 1260px;
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -211,7 +227,7 @@ h4 {
 
 .homeButton a {
   font-family: 'Roboto Mono', monospace;
-  color: #F7F9F6ff;
+  color: #F7F9F6;
   text-decoration: none;
   font-size: 20px;
   text-align: right;
@@ -220,7 +236,7 @@ h4 {
 
 .homeButton a:hover {
   transform: translateX(-25px);
-  color: #8AE293ff;
+  color: #8AE293;
 }
 
 #section {
@@ -239,7 +255,7 @@ h4 {
 }
 
 .title span {
-  color: #8AE293ff;
+  color: #8AE293;
 }
 
 .description {
@@ -252,12 +268,11 @@ h4 {
   margin: 0 400px 100px 400px;
 }
 
-.links a,
-button {
+.links a, button {
   font-family: 'Roboto Mono', monospace;
   display: inline-block;
   font-size: 20px;
-  color: #8AE293ff;
+  color: #8AE293;
   text-decoration: none;
   margin-bottom: 30px;
   font-weight: 700;
