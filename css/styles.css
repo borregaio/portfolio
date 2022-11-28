@@ -14,6 +14,7 @@ h1 {
 }
 
 p {
+  line-height: 2.5rem;
   color: #F7F9F6;
 }
 
@@ -324,7 +325,7 @@ button:hover {
 
 /* Mobile layout */
 
-@media only screen and (320px <=width <=480px) {
+@media only screen and (min-width:320px) and (max-width:480px) {
 
   /* General */
 
@@ -358,7 +359,7 @@ button:hover {
     text-align: center;
 
   }
-  
+
   .coverImage img {
     width: auto;
     height: 100vh;
@@ -381,7 +382,7 @@ button:hover {
   .hello:hover:before {
     content: none;
   }
-  
+
   .iam:hover:before {
     content: none;
   }
@@ -471,12 +472,16 @@ button:hover {
     margin-bottom: 20px;
   }
 
+  .email:hover:before {
+    content: "Copied";
+  }
+
 }
 
 
 /* Tablet Layout */
 
-@media only screen and (480px <=width <=1024px) {
+@media only screen and (min-width:481px) and (max-width:1024px) {
 
   a {
     font-size: 60px;
@@ -517,7 +522,7 @@ button:hover {
   .hello:hover:before {
     content: none;
   }
-  
+
   .iam:hover:before {
     content: none;
   }
@@ -545,6 +550,7 @@ button:hover {
     transform: translateX(0);
   }
 
+
   /* Home Button */
 
   .homeButton {
@@ -557,19 +563,21 @@ button:hover {
     font-size: 20px;
   }
 
-/* Projects */
 
-ul {
-  margin: 150px 0 50px 50px;
-}
+  /* Projects */
 
-ul a {
-  font-size: 48px;
-}
+  ul {
+    margin: 150px 0 50px 50px;
+  }
 
-h4 {
-  font-size: 20px;
-}
+  ul a {
+    font-size: 48px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
 
   /* Projects individual page */
 
@@ -581,6 +589,12 @@ h4 {
     width: 100%;
   }
 
+
+  /* Contact */
+
+  .email:hover:before {
+    content: "Copied";
+  }
 
 
 }
