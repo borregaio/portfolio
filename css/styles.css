@@ -8,8 +8,56 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
+h1 {
+  font-family: 'Rubik', sans-serif;
+  color: #F7F9F6;
+}
 
-/* Animation */
+p {
+  color: #F7F9F6;
+}
+
+.title {
+  font-size: 50px;
+  margin: 250px 300px 200px 250px;
+}
+
+.title span {
+  color: #8AE293;
+}
+
+.description {
+  margin: 0 400px 50px 400px;
+  line-height: 2rem;
+  font-size: 20px;
+}
+
+
+/* Home button */
+
+.homeButton {
+  position: fixed;
+  left: 85%;
+  bottom: 85%;
+
+}
+
+.homeButton a {
+  font-family: 'Roboto Mono', monospace;
+  color: #F7F9F6;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: right;
+  transition: transform 500ms;
+}
+
+.homeButton a:hover {
+  transform: translateX(-25px);
+  color: #8AE293;
+}
+
+
+/* Animations */
 
 .lineUp1 {
   animation: 1s anim-lineUp ease-out;
@@ -91,9 +139,17 @@ body {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
+
+/* Main page */
 
 
 a {
@@ -106,16 +162,8 @@ a {
   font-family: 'Rubik', sans-serif;
 }
 
-h1 {
-  font-family: 'Rubik', sans-serif;
-  color: #F7F9F6;
-}
-
-p {
-  color: #F7F9F6;
-}
-
 .main {
+  display: block;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -124,12 +172,25 @@ p {
   transform: translateY(-50%);
 }
 
+.mainMobile {
+  display: none;
+}
+
+.tapHere {
+  display: none;
+}
+
 .coverImage {
   text-align: right;
 }
 
 .coverImage img {
-  width: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  height: 100vh;
 }
 
 .hello,
@@ -175,7 +236,6 @@ p {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: right;
-
 }
 
 
@@ -204,7 +264,7 @@ h4 {
 }
 
 
-/* Projects indivisual page */
+/* Projects individual page */
 
 .projectDescription {
   font-size: 28px;
@@ -218,57 +278,17 @@ h4 {
 
 /* Contact */
 
-.homeButton {
-  position: fixed;
-  left: 85%;
-  bottom: 85%;
-
-}
-
-.homeButton a {
-  font-family: 'Roboto Mono', monospace;
-  color: #F7F9F6;
-  text-decoration: none;
-  font-size: 20px;
-  text-align: right;
-  transition: transform 500ms;
-}
-
-.homeButton a:hover {
-  transform: translateX(-25px);
-  color: #8AE293;
-}
-
 #section {
   margin-top: 150px;
   margin-bottom: 200px;
-}
-
-.title {
-  font-size: 50px;
-  margin: 250px 300px 200px 250px;
-}
-
-.title h1 {
-  font-family: 'Rubik', sans-serif;
-  margin: 0;
-}
-
-.title span {
-  color: #8AE293;
-}
-
-.description {
-  margin: 0 400px 50px 400px;
-  line-height: 2rem;
-  font-size: 20px;
 }
 
 .links {
   margin: 0 400px 100px 400px;
 }
 
-.links a, button {
+.links a,
+button {
   font-family: 'Roboto Mono', monospace;
   display: inline-block;
   font-size: 20px;
@@ -298,4 +318,269 @@ button:hover {
 
 .email:hover:before {
   content: "Click to copy";
+}
+
+
+
+/* Mobile layout */
+
+@media only screen and (320px <=width <=480px) {
+
+  /* General */
+
+  a {
+    font-size: 60px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .title {
+    margin: 0 0 50px 40px;
+  }
+
+  .description {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 14px;
+  }
+
+  .links {
+    margin: 20px 40px 0 40px;
+    font-size: 14px;
+  }
+
+
+  /* Main page */
+
+  .coverImage {
+    text-align: center;
+
+  }
+  
+  .coverImage img {
+    width: auto;
+    height: 100vh;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .mainMobile {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .hello:hover:before {
+    content: none;
+  }
+  
+  .iam:hover:before {
+    content: none;
+  }
+
+  .name:hover:before {
+    content: none;
+  }
+
+  .tapHere {
+    display: block;
+    position: absolute;
+    left: 70%;
+    bottom: 90%;
+    z-index: 999;
+  }
+
+  .tapHere button {
+    border: none;
+    background: none;
+    color: #8AE293;
+    font-size: 14px;
+  }
+
+  .tapHere button:hover {
+    transform: translateX(0);
+  }
+
+
+  /* Home button */
+
+  .homeButton {
+    position: absolute;
+    left: 65%;
+    bottom: 90%;
+  }
+
+  .homeButton a {
+    font-size: 14px;
+  }
+
+
+  /* About */
+
+  .profile {
+    width: 100%;
+    margin: 0 auto 50px auto;
+  }
+
+
+  /* Projects */
+
+  ul {
+    margin: 150px 0 20px 40px;
+  }
+
+  ul a {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+
+  /* Projects individual page */
+
+  .projectDescription {
+    font-size: 14px;
+  }
+
+  .projectImage {
+    width: 100%;
+  }
+
+
+  /* Contact */
+
+  .links a,
+  button {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .email {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/* Tablet Layout */
+
+@media only screen and (480px <=width <=1024px) {
+
+  a {
+    font-size: 60px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .title {
+    margin: 0 0 50px 50px;
+  }
+
+  .description {
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 3rem;
+  }
+
+  .links {
+    margin: 20px 50px 0 50px;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .mainMobile {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .hello:hover:before {
+    content: none;
+  }
+  
+  .iam:hover:before {
+    content: none;
+  }
+
+  .name:hover:before {
+    content: none;
+  }
+
+  .tapHere {
+    display: block;
+    position: absolute;
+    left: 80%;
+    bottom: 90%;
+    z-index: 999;
+  }
+
+  .tapHere button {
+    border: none;
+    background: none;
+    color: #8AE293;
+    font-size: 20px;
+  }
+
+  .tapHere button:hover {
+    transform: translateX(0);
+  }
+
+  /* Home Button */
+
+  .homeButton {
+    position: absolute;
+    left: 75%;
+    bottom: 90%;
+  }
+
+  .homeButton a {
+    font-size: 20px;
+  }
+
+/* Projects */
+
+ul {
+  margin: 150px 0 50px 50px;
+}
+
+ul a {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+  /* Projects individual page */
+
+  .projectDescription {
+    font-size: 20px;
+  }
+
+  .projectImage {
+    width: 100%;
+  }
+
+
+
 }
