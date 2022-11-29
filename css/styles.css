@@ -14,8 +14,15 @@ h1 {
 }
 
 p {
-  line-height: 2.5rem;
+  line-height: 2rem;
   color: #F7F9F6;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.projectsLink {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .title {
@@ -394,8 +401,8 @@ button:hover {
   .tapHere {
     display: block;
     position: absolute;
-    left: 70%;
-    bottom: 90%;
+    left: 10%;
+    bottom: 20%;
     z-index: 999;
   }
 
@@ -403,7 +410,7 @@ button:hover {
     border: none;
     background: none;
     color: #8AE293;
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .tapHere button:hover {
@@ -534,8 +541,8 @@ button:hover {
   .tapHere {
     display: block;
     position: absolute;
-    left: 80%;
-    bottom: 90%;
+    left: 10%;
+    bottom: 20%;
     z-index: 999;
   }
 
