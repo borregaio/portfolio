@@ -27,7 +27,7 @@ p {
 
 .title {
   font-size: 50px;
-  margin: 250px 300px 200px 250px;
+  margin: 250px 300px 150px 250px;
 }
 
 .title span {
@@ -47,6 +47,7 @@ p {
   position: fixed;
   left: 85%;
   bottom: 85%;
+  z-index: 999;
 
 }
 
@@ -236,9 +237,12 @@ a {
 /* About */
 
 .profile {
-  margin-top: 100px;
   margin-bottom: 100px;
   text-align: right;
+}
+
+.profile img {
+  width: 74%;
 }
 
 
@@ -287,7 +291,7 @@ h4 {
 }
 
 .links {
-  margin: 0 400px 100px 400px;
+  margin: 0 400px 50px 400px;
 }
 
 .links a,
@@ -364,7 +368,7 @@ button:hover {
 
   .coverImage img {
     position: absolute;
-    right: -55%;
+    right: -85%;
     width: auto;
     height: 100vh;
   }
@@ -378,7 +382,7 @@ button:hover {
     margin: 0;
     position: absolute;
     top: 60%;
-    left: 10%;
+    left: 5%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
@@ -395,10 +399,19 @@ button:hover {
     content: none;
   }
 
+  #hello,
+  #iam,
+  #name, .tapHere {
+    color: #F7F9F6;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+      0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
+
   .tapHere {
     display: block;
     position: absolute;
-    left: 10%;
+    left: 5%;
     bottom: 10%;
     z-index: 999;
   }
@@ -406,7 +419,7 @@ button:hover {
   .tapHere button {
     border: none;
     background: none;
-    color: #DA3A37;
+    color: #F7F9F6;
     font-size: 20px;
   }
 
@@ -517,7 +530,7 @@ button:hover {
     height: 100vh;
     width: auto;
     position: absolute;
-    right: -25%;
+    right: -55%;
   }
 
   .main {
