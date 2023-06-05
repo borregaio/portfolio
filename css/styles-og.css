@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #001F33;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  color: #F7F9F6;
+}
+
+p {
+  line-height: 2rem;
+  color: #F7F9F6;
+  margin-bottom: 3.5rem;
+  font-size: 18px;
+}
+
+.projectsLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 50px;
+  margin: 250px 300px 150px 250px;
+}
+
+.title span {
+  color: #DA3A37;
+}
+
+.description {
+  margin: 0 400px 50px 400px;
+  line-height: 2rem;
+  font-size: 20px;
+}
+
+
+/* Home button */
+
+.homeButton {
+  position: fixed;
+  left: 85%;
+  bottom: 85%;
+  z-index: 999;
+
+}
+
+.homeButton a {
+  font-family: 'Roboto Mono', monospace;
+  color: #F7F9F6;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: right;
+  transition: transform 500ms;
+}
+
+.homeButton a:hover {
+  transform: translateX(-25px);
+  color: #DA3A37;
+}
+
+
+/* Animations */
+
+.lineUp1 {
+  animation: 1s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.lineUp2 {
+  animation: 2s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.lineUp3 {
+  animation: 3s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.fadeIn {
+  animation: 3s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Main page */
+
+
+a {
+  color: #F7F9F6;
+  font-size: 120px;
+  font-weight: 700;
+  margin: 20px 0;
+  display: block;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+}
+
+.main {
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mainMobile {
+  display: none;
+}
+
+.tapHere {
+  display: none;
+}
+
+.coverImage {
+  text-align: center;
+}
+
+.coverImage img {
+  position: absolute;
+
+  width: auto;
+  height: 100vh;
+}
+
+.hello,
+.iam,
+.name {
+  text-decoration: none;
+  transition: transform 500ms;
+}
+
+.iam,
+.name {
+  color: #DA3A37;
+}
+
+.hello:hover span,
+.iam:hover span,
+.name:hover span {
+  display: none;
+}
+
+.hello:hover,
+.iam:hover,
+.name:hover {
+  transform: translateX(70px);
+}
+
+.hello:hover:before {
+  content: "About"
+}
+
+.iam:hover:before {
+  content: "Projects"
+}
+
+.name:hover:before {
+  content: "Contact"
+}
+
+
+/* About */
+
+.profile {
+  margin-bottom: 100px;
+  text-align: right;
+}
+
+.profile img {
+  width: 74%;
+}
+
+
+/* Projects */
+
+ul {
+  margin: 200px 200px;
+}
+
+ul a {
+  text-decoration: none;
+  font-size: 70px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  transition: transform 500ms;
+}
+
+ul a:hover {
+  transform: translateX(25px);
+  color: #DA3A37;
+}
+
+h4 {
+  font-family: 'Roboto Mono', monospace;
+  color: #F7F9F6;
+}
+
+
+/* Projects individual page */
+
+.projectTitles {
+  margin-bottom: 20px;
+}
+
+.projectDescription {
+  font-size: 28px;
+}
+
+.projectImage {
+  width: 1260px;
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contact */
+
+#section {
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.links {
+  margin: 0 400px 50px 400px;
+}
+
+.links a,
+button {
+  font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+  font-size: 20px;
+  color: #DA3A37;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-weight: 700;
+  transition: transform 500ms;
+}
+
+.links button {
+  font-family: 'Roboto Mono', monospace;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.links a:hover,
+button:hover {
+  transform: translateX(25px);
+}
+
+.email:hover span {
+  display: none;
+}
+
+.email:hover:before {
+  content: "Click to copy";
+}
+
+
+
+/* Mobile layout */
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+  /* General */
+
+  a {
+    font-size: 60px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .title {
+    margin: 0 0 50px 40px;
+  }
+
+  .description {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 14px;
+  }
+
+  .links {
+    margin: 20px 40px 0 40px;
+    font-size: 14px;
+  }
+
+
+  /* Main page */
+
+  .coverImage img {
+    position: absolute;
+    right: -25%;
+    width: auto;
+    height: 100vh;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .mainMobile {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .hello:hover:before {
+    content: none;
+  }
+
+  .iam:hover:before {
+    content: none;
+  }
+
+  .name:hover:before {
+    content: none;
+  }
+
+  #hello,
+  #iam,
+  #name {
+    color: #F7F9F6;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+      0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
+
+  .tapHere {
+    display: block;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    z-index: 999;
+  }
+
+  .tapHere button {
+    border: none;
+    background: none;
+    color: #F7F9F6;
+    font-size: 20px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
+
+  .tapHere button:hover {
+    transform: translateX(0);
+  }
+
+
+  /* Home button */
+
+  .homeButton {
+    position: absolute;
+    left: 65%;
+    bottom: 90%;
+  }
+
+  .homeButton a {
+    font-size: 14px;
+  }
+
+
+  /* About */
+
+  .profile {
+    width: 100%;
+    margin: 50px auto 50px auto;
+  }
+
+  .profile img {
+    width: 100%;
+  }
+
+
+  /* Projects */
+
+  ul {
+    margin: 150px 0 20px 40px;
+  }
+
+  ul a {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+
+  /* Projects individual page */
+
+  .projectDescription {
+    font-size: 14px;
+  }
+
+  .projectImage {
+    width: 100%;
+  }
+
+
+  /* Contact */
+
+  .links a,
+  button {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .email {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .email:hover:before {
+    content: "Copied";
+  }
+
+}
+
+
+/* Tablet Layout */
+
+@media only screen and (min-width:481px) and (max-width:1024px) {
+
+  a {
+    font-size: 60px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .title {
+    margin: 0 0 50px 50px;
+  }
+
+  .description {
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 3rem;
+  }
+
+  .links {
+    margin: 20px 50px 0 50px;
+  }
+
+  .coverImage img {
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    right: -55%;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .mainMobile {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .hello:hover:before {
+    content: none;
+  }
+
+  .iam:hover:before {
+    content: none;
+  }
+
+  .name:hover:before {
+    content: none;
+  }
+
+  .tapHere {
+    display: block;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    z-index: 999;
+  }
+
+  .tapHere button {
+    border: none;
+    background: none;
+    color: #DA3A37;
+    font-size: 20px;
+  }
+
+  .tapHere button:hover {
+    transform: translateX(0);
+  }
+
+
+  /* Home Button */
+
+  .homeButton {
+    position: absolute;
+    left: 75%;
+    bottom: 90%;
+  }
+
+  .homeButton a {
+    font-size: 20px;
+  }
+
+
+  /* About */
+
+  .profile img {
+    width: 100%;
+  }
+
+
+  /* Projects */
+
+  ul {
+    margin: 150px 0 50px 50px;
+  }
+
+  ul a {
+    font-size: 48px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+
+  /* Projects individual page */
+
+  .projectDescription {
+    font-size: 20px;
+  }
+
+  .projectImage {
+    width: 100%;
+  }
+
+
+  /* Contact */
+
+  .email:hover:before {
+    content: "Copied";
+  }
+
+
+}

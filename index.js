@@ -1,11 +1,11 @@
 // Change text
 
-function changeText() {
-  document.getElementById("hello").innerHTML = "About"
-  document.getElementById("iam").innerHTML = "Projects"
-  document.getElementById("name").innerHTML = "Contact"
+// function changeText() {
+//   document.getElementById("hello").innerHTML = "About"
+//   document.getElementById("iam").innerHTML = "Projects"
+//   document.getElementById("name").innerHTML = "Contact"
 
-}
+// }
 
 
 // "Copy to clipboard" text
