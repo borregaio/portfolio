@@ -275,7 +275,6 @@ p {
 
 .project-description {
   margin-bottom: 100px;
-  line-height: 35px;
 }
 
 .project-links {
@@ -294,6 +293,10 @@ p {
 @media only screen and (max-width: 700px) {
 
   /* Main page */
+
+  html {
+    min-width: 100vw;
+  }
 
   h1 {
     font-size: 35px;
@@ -449,6 +452,10 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
+
+  html {
+    min-width: 100vw;
+  }
 
   h1, ul a, #about h1, #contact h1, #projects-individual h1 {
     font-size: 30px;
