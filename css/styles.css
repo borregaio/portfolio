@@ -34,11 +34,11 @@ h1 {
   font-size: 60px;
 }
 
-.main {
+#main {
   text-align: center;
 }
 
-.main span {
+#main span {
   -webkit-text-stroke-width: 0;
   -webkit-text-fill-color: #667791;
 }
@@ -343,6 +343,7 @@ p {
 
   #projects-individual {
     margin: 100px 0;
+    padding: 0;
   }
 
   #projects-individual h1 {
@@ -395,6 +396,7 @@ p {
 
   #about {
     margin: 120px 40px 50px 40px;
+    padding: 0;
   }
 
   #about h1 {
@@ -423,6 +425,7 @@ p {
   #contact {
     position: absolute;
     top: 13%;
+    padding: 0;
   }
 
   #contact h1 {
