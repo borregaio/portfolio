@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infodex — Carlos Borrega</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu Overlay -->
+    <div class="overlay overlay-slide-left" id="overlay">
+        <!-- Menu Items -->
+        <nav>
+            <ul>
+                <li id="nav-1" class="slide-out-1"><a href="index.html#home">Home</a></li>
+                <li id="nav-2" class="slide-out-2"><a href="index.html#about">About</a></li>
+                <li id="nav-3" class="slide-out-3"><a href="index.html#skills">Skills</a></li>
+                <li id="nav-4" class="slide-out-4"><a href="index.html#projects">Projects</a></li>
+                <li id="nav-5" class="slide-out-5"><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Menu Bars -->
+
+    <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <section id="project"><a href="index.html" class="logo">borrega.io</a>
+
+        <div class="project-info">
+            <img data-aos="flip-left" src="images/infodex.jpg" alt="Rock, paper, scissors game">
+            <div data-aos="zoom-in" class="project-description">
+                <h1><span>01.</span> Infodex</h1>
+                <h4>NodeJS & RESTful API</h4>
+            </div>
+            <div data-aos="zoom-in" class="project-links">
+                <a href="https://www.infodex.borrega.io/" target="blank">Project Website</a>
+                <a href="https://github.com/borregaio/infodex" target="blank">GitHub Page</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="project-text">
+
+        <div class="project-text">
+
+            <h1 data-aos="fade-up">The Goal</h1>
+            <p data-aos="fade-up">I have always been an avid Pokémon fan, and having a personal Pokédex is incredibly
+                cool. Infodex, a Node web app, utilises an open API to fetch comprehensive Pokémon information,
+                including name, type, number, and image. The front-end design, created with CSS, incorporates JavaScript
+                functionality to remove the initial div after a Pokémon search, revealing the desired information.
+                Additionally, this website is mobile-friendly.</p>
+            <h1 data-aos="fade-up">The Challenges</h1>
+            <p data-aos="fade-up">The utilisation of the "fetch()" function proved to be a significantly more convenient
+                approach for acquiring the entirety of the information required by this application. By implementing
+                JavaScript to selectively remove and display divs in response to specific Pokémon search queries, the
+                code was rendered concise and efficiently organised within a single file.</p>
+            <h1 data-aos="fade-up">What's Next?</h1>
+            <p data-aos="fade-up">A viable approach to expanding this project would involve incorporating additional
+                details regarding each Pokémon, encompassing information such as statistics, evolutions, and attacks.
+                Augmenting the application with a templating system, such as EJS, would provide increased versatility to
+                individual Infodex entries, while facilitating a more streamlined and refined code refactoring process.
+                This integration would enable the codebase to be structured in a more organised and efficient manner,
+                enhancing both the functionality and maintainability of the application.</p>
+
+        </div>
+
+    </section>
+
+    <section id="footer">
+
+        <div class="copyright">
+            <hr>
+            <h3>© Carlos Borrega 2023</h3>
+        </div>
+
+    </section>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: true, // whether elements should animate out while scrolling past them
+      disable: 'mobile'
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors — Carlos Borrega</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu Overlay -->
+    <div class="overlay overlay-slide-left" id="overlay">
+        <!-- Menu Items -->
+        <nav>
+            <ul>
+                <li id="nav-1" class="slide-out-1"><a href="index.html#home">Home</a></li>
+                <li id="nav-2" class="slide-out-2"><a href="index.html#about">About</a></li>
+                <li id="nav-3" class="slide-out-3"><a href="index.html#skills">Skills</a></li>
+                <li id="nav-4" class="slide-out-4"><a href="index.html#projects">Projects</a></li>
+                <li id="nav-5" class="slide-out-5"><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Menu Bars -->
+
+    <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <section id="project"><a href="index.html" class="logo">borrega.io</a>
+
+        <div class="project-info">
+            <img data-aos="flip-left" src="images/game.jpg" alt="Rock, paper, scissors game">
+            <div data-aos="zoom-in" class="project-description">
+                <h1><span>02.</span> Rock, Paper Scissors</h1>
+                <h4>JavaScript Game</h4>
+            </div>
+            <div data-aos="zoom-in" class="project-links">
+                <a href="https://www.rockpaperscissors.borrega.io/" target="blank">Project Website</a>
+                <a href="https://github.com/borregaio/rockpaperscissors" target="blank">GitHub Page</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="project-text">
+
+        <div class="project-text">
+
+            <h1 data-aos="fade-up">The Goal</h1>
+            <p data-aos="fade-up">Welcome to "Rock, Paper, Scissors" - a JavaScript game where you choose rock, paper,
+                or scissors, and the computer picks randomly. The result is displayed on screen, and scores are updated.
+                Enjoy the challenge and have fun!</p>
+            <h1 data-aos="fade-up">The Challenges</h1>
+            <p data-aos="fade-up">Creating the "Rock, Paper, Scissors" game posed challenges in breaking down processes
+                into functions. I used an array for selections, added event listeners for player's choice, randomized
+                computer's choice, displayed both selections, and updated the score. Learning the logic and implementing
+                different functions was tough, but I discovered dataset and parseInt() for added knowledge. I'm looking
+                forward to exploring more complex games with JavaScript!</p>
+            <h1 data-aos="fade-up">What's Next?</h1>
+            <p data-aos="fade-up">This game serves as a simple demonstration of various JavaScript functions and DOM
+                manipulation. It showcases the possibilities of building interactive experiences. My next endeavor will
+                involve creating a more complex game, employing different logic, and implementing a wider range of
+                JavaScript functions to elevate the gaming experience further.</p>
+
+        </div>
+
+    </section>
+
+    <section id="footer">
+
+        <div class="copyright">
+            <hr>
+            <h3>© Carlos Borrega 2023</h3>
+        </div>
+
+    </section>
+
+    <!-- Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 1500, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            disable: 'mobile'
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

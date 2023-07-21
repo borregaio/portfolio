@@ -2,31 +2,212 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="../images/favicon.png">
-    <title>Carlos Borrega</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Borrega</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <section class="homepage">
-    <div id="main">
-        <div class="lineup-title">
-            <h1>Hello, my name is <span>Carlos Borrega</span></h1>
-            <br>
-            <h1>and I'm a <span>Full-Stack Web Developer</span></h1>
-        </div>
-        <div class="lineup-subtitle">
-            <a href="/projects.html" class="slide mobile-link1" >◢ See my projects</a>
-            <a href="/about.html" class="slide mobile-link2" >◢ More about me</a>
-            <a href="/contact.html" class="slide mobile-link2" >◢ Get in touch</a>
-        </div>
-    </div>
-</section>
+  <!-- Menu Overlay -->
+  <div class="overlay overlay-slide-left" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+      <ul>
+        <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
+        <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="#skills">Skills</a></li>
+        <li id="nav-4" class="slide-out-4"><a href="#projects">Projects</a></li>
+        <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Menu Bars -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
 
-    <script src="index.js"></script>
+
+  <!-- Sections -->
+
+  <!-- Home -->
+
+  <section id="home"><a href="#home" class="logo">borrega.io</a>
+
+    <div class="title-main">
+      <h1 data-aos="fade-up">
+        Hey, I'm Carlos
+      </h1>
+      <h2 data-aos="fade-up" data-aos-delay="600">
+        I'm a JavaScript Web Developer based in London
+      </h2>
+    </div>
+
+  </section>
+
+
+  <!-- About -->
+
+  <section id="about">
+
+    <img data-aos="flip-left" src="images/profile.jpg" alt="profile">
+
+    <div class="profile-description">
+
+      <h1 class="section-title">Welcome to my portfolio!</h1>
+
+      <p>
+        My name is Carlos Borrega and I'm a self-taught JavaScript web developer who is constantly seeking new knowledge and growth. I am
+        deeply passionate about my work and embrace challenges with enthusiasm. Pushing my limits and dedicating myself
+        to hard work are where I truly excel.
+      </p>
+      <p>
+        Prior to my journey into web development, I gained valuable experience in the retail sector as a manager and
+        visual merchandiser. This role honed my problem-solving abilities, taught me to adapt quickly, and highlighted
+        the power of teamwork.
+      </p>
+      <p>
+        My current skill set encompasses HTML, CSS, JavaScript, NodeJS, and MongoDB. Additionally, I am eagerly
+        immersing myself in learning React to elevate my expertise to the next level.
+      </p>
+      <p>
+        My ultimate ambition is to join an exceptional team where collaboration reigns and together we can create
+        awe-inspiring projects.
+      </p>
+      <p>
+        If you would like to learn more about my past work experiences, please feel free to download my resume from the
+        link below. Thank you for visiting my portfolio, and I look forward to the possibility of working together in
+        the future!
+      </p>
+
+      <a class="link resume" href="docs/Resume.pdf" download="Resume.pdf">Download My
+        Resume</a>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills -->
+
+  <section id="skills">
+
+    <h1 class="section-title">My Skills</h1>
+
+    <ul class="skills-list">
+      <li data-aos="fade-left">
+        HTML
+      </li>
+      <hr data-aos="fade-right">
+      <li data-aos="fade-left">
+        CSS
+      </li>
+      <hr data-aos="fade-right">
+      <li data-aos="fade-left">
+        JavaScript
+      </li>
+      <hr data-aos="fade-right">
+      <li data-aos="fade-left">
+        NodeJS
+      </li>
+      <hr data-aos="fade-right">
+      <li data-aos="fade-left">
+        React
+      </li>
+      <hr data-aos="fade-right">
+      <li data-aos="fade-left">
+        MongoDB
+      </li>
+      <hr data-aos="fade-right" class="last-line">
+    </ul>
+
+  </section>
+
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <h1 class="section-title">My Projects</h1>
+
+    <ul class="projects-list">
+      <li data-aos="fade-right">
+        <span>01.</span>
+        <a href="infodex.html">Infodex</a>
+      </li>
+      <li data-aos="fade-right">
+        <span>02.</span>
+        <a href="jsgame.html">Rock, Paper, Scissors</a>
+      </li>
+      <li data-aos="fade-right">
+        <span>03.</span>
+        <a href="portfolio.html">Portfolio</a>
+      </li>
+    </ul>
+
+  </section>
+
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <h1 class="section-title">Get In Touch!</h1>
+
+    <div class="contact-info">
+
+      <p>I would love to hear from you!
+        <br>
+        Whether you have a project in mind, want to collaborate, or simply
+        want to say hello,
+        <br>
+        please don't hesitate to reach out.
+      </p>
+
+      <ul class="contact-list">
+        <li data-aos="fade-left">
+          <a class="link" href="docs/Resume.pdf" download="Resume.pdf">My Resume</a>
+        </li>
+        <li data-aos="fade-left">
+          <a class="link" href="https://www.linkedin.com/in/carlosborrega/" target="_blank">LinkedIn</a>
+        </li>
+        <li data-aos="fade-left">
+          <a class="link" href="https://github.com/borregaio" target="_blank">GitHub</a>
+        </li>
+        <li data-aos="fade-left">
+          <a class="link" href="mailto:c.borrega@pm.me">c.borrega@pm.me</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section id="footer">
+
+    <div class="copyright">
+      <hr>
+      <h3>© Carlos Borrega 2023</h3>
+    </div>
+
+  </section>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: true, // whether elements should animate out while scrolling past them
+      disable: 'mobile'
+    });
+  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
