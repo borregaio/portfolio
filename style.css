@@ -463,9 +463,13 @@ hr {
   color: var(--primaryColor);
   background-color: var(--bg2);
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   text-align: left;
+}
+
+.project-info {
+  padding-left: 120px;
 }
 
 .project-description {
