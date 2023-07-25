@@ -524,8 +524,9 @@ h4 {
   margin-bottom: 50px;
 }
 
+
 /* Media Query: Small Laptop/ Tablet */
-@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+@media only screen and (min-width: 1030px) and (max-width: 1369px) {
 
   p {
     line-height: 1.7rem;
@@ -552,8 +553,13 @@ h4 {
     margin-left: 80px;
   }
 
+  .skills-list li {
+    margin-top: 30px;
+  }
+
   hr {
     width: 600px;
+    margin: 0;
   }
 
   .projects-list {
@@ -565,9 +571,33 @@ h4 {
     margin-left: 75px;
   }
 
+  .contact-info p {
+    margin-top: 40px;
+  }
+
+  #project {
+    height: 100%;
+    padding: 100px 0;
+  }
+
+  #project img {
+    width: 40%;
+    margin-top: 40px;
+  }
+
   .project-info {
     padding-left: 120px;
   }
+
+  #project-text {
+    height: 100%;
+  }
+
+  #footer {
+    height: 100%;
+    padding: 40px 0;
+  }
+
 }
 
 
