@@ -1,0 +1,100 @@
+body {
+    background-image: url(images/background.jpg);
+    /* The image used for background*/
+    background-size: cover;
+    background-position: 50% 30%;
+    /* Resize the background image to cover the entire container */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image-container {
+    text-align: center;
+    width: 100%;
+}
+
+h4 {
+    padding: 20px 0;
+}
+
+.myportfolio:hover span {
+    display: none;
+}
+
+.myportfolio:hover:before {
+    content: "borrega.io";
+}
+
+.emailme:hover span {
+    display: none;
+}
+
+.emailme:hover:before {
+    content: "c.borrega@pm.me";
+}
+
+.callme:hover span {
+    display: none;
+}
+
+.callme:hover:before {
+    content: "07599306711";
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container a {
+    margin-bottom: 20px;
+}
+
+.link {
+    min-width: 50% !important;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .link {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+.w3-purple,
+.w3-hover-purple:hover {
+    color: #fff !important;
+    background-color: rgba(156, 39, 176, 0.6) !important;
+}
